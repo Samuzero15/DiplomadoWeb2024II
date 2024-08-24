@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <section>
+        Esta es la pagina de registro de la practica 2.
+        <nav>
+            <a href="practica2.html">Practica 2</a>
+            <a href="../galeria.html">Galeria</a>
+        </nav>
+    </section>
+
+    <section>
+        <form action="../galeria.html" method="post">
+            <label for="texto"> Texto:</label> 
+            <input type="text" name="texto" id="texto" maxlength="15" size="15"> <br>
+            <label for="numero">Numero:</label>
+            <input type="number" name="numero" id="numero"> <br>
+            <label for="opcion">Sexo: </label>
+            <select name="opcion" id="opcion"> 
+                <option value="" selected>Seleccione</option>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select><br/>
+            <label for="email">Correo</label>
+            <input type="text" name="email" id="email"><br>
+            <label for="archivo">Archivo</label>
+            <input type="FILE" name="archivo" id="archivo"><br>
+            <label for="fecha">Fecha: </label>
+            <input type="date" name="fecha" id="fecha"><br>
+
+            
+
+            <h3>Fruta favorita?</h3>
+
+            <label for="manzana">Manzana</label><input type="radio" name="fruta" value="manzana" id="manzana">
+            <label for="pera">Pera</label><input type="radio" name="fruta" value="pera" id="pera">
+            <label for="uva">Uva</label><input type="radio" name="fruta" value="uva" id="uva">
+            <label for="banana">Banana</label><input type="radio" name="fruta" value="banana" id="banana">
+            <br>
+
+            <h3>Lista de utiles</h3>
+            <label for="lapiz">Lapiz</label><input type="checkbox" value="Lapiz" id="lapiz" name="utiles"><br>
+            <label for="cuaderno">Cuaderno</label><input type="checkbox" value="Cuaderno" id="cuaderno" name="utiles"><br>
+            <label for="borrador">Borrador</label><input type="checkbox" value="Borrador" id="borrador" name="utiles"><br>
+            <label for="cartera">Cartera</label><input type="checkbox" value="Cartera" id="cartera" name="utiles"><br>
+            <label for="telefono">Telefono</label><input type="checkbox" value="Telefono" id="telefono" name="utiles"><br>
+            <label for="llaves">Llaves</label><input type="checkbox" value="Llaves" id="llaves" name="utiles"><br>
+            <label for="mochila">Mochila</label><input type="checkbox" value="Mochila" id="mochila" name="utiles"><br>
+
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+    
+</body>
+</html>
