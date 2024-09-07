@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Practica4</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#">
+            <img src="imgs/Mando1.png" alt="Bootstrap" width="30" height="24">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" width="30" height="10">
+          <div class="carousel-item active">
+            <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAADICAYAAABS39xVAAAAAXNSR0IArs4c6QAACgpJREFUeF7t3OFy20YMReHmIfOSyUO2o04846qiFrvkyrrG179cgsC50LHMJP3x69evv//yHwIIIBBA4AdhBaSkRQQQ+JcAYVkEBBCIIUBYMVFpFAEECMsOIIBADAHCiolKowggQFh2AAEEYggQVkxUGkUAAcKyAwggEEOAsGKi0igCCBCWHUAAgRgChBUTlUYRQICw7AACCMQQIKyYqDSKAAKEZQcQQCCGAGHFRKVRBBAgLDuAAAIxBAgrJiqNIoAAYdkBBBCIIUBYMVFpFAEECMsOIIBADAHCiolKowggQFh2AAEEYggQVkxUGkUAAcKyAwggEEOAsGKi0igCCBCWHUAAgRgChBUTlUYRQICw7AACCMQQIKyYqDSKAAKEZQcQQCCGAGHFRKVRBBAgLDuAAAIxBAgrJiqNIoAAYdkBBBCIIUBYMVFpFAEECMsOIIBADAHCiolKowggQFh2AAEEYggQVkxUGkUAAcKyAwggEEOAsGKi0igCCBCWHUAAgRgChBUTlUYRQICw7AACCMQQIKyYqDSKAAKEZQcQQCCGAGHFRKVRBBAgLDuAAAIxBAgrJiqNIoAAYdkBBBCIIUBYMVFpFAEECMsOIIBADAHCiolKowggQFh2AAEEYggQVkxUGkUAAcKyAwggEEOAsGKi0igCCBCWHUAAgRgChBUTlUYRQICw7AACCMQQIKyYqDSKAAKEZQcQQCCGAGHFRKVRBBAgLDuAAAIxBAgrJiqNIoAAYdkBBBCIIUBYMVFpFAEECMsOIIBADAHCiolKowggQFh2AAEEYggQVkxUGkUAAcKyAwggEEOAsGKi0igCCBCWHUAAgRgChBUTlUYRQICw7AACCMQQIKyYqDSKAAKEZQcQQCCGAGHFRKVRBBAgLDuAAAIxBAgrJiqNIoAAYT3ZgZ8/fz68+vv379Obs6v2rrqnB95Y4Gjm2yPPZrWL5666GzG/RWnCehDDsw/A5+MrH4ZdtXfVfYstPWiiOvOKuKq1Z3dgV913zunK3gjrjmZ1oT5um1nYXbV31b1y0a6sNTvv7A+Z2frVHdhV90q2716LsD4lNLtQM9LaVXtX3Xde3NWZK3mt1h5Ja1fdd85pR2+ENRDW/SI+WrzRst4eUbmvcuZ+CSr3VM7sWK4dNWfe/cyc/ei1wqpypntOO7K/1SSsP2RnlnDmbFVWMx+Y3Wd3LdsVde/ZX/XDQk5XpLO/BmEdCGv0QZj54MycffTBOeplV939a7f2hNl5Pz+lcm/lzGzNmTyPfhCNdnGNZuZdhLWY28xyz5ydWfBddReRbL9tdt5ZuczWr56vniOs8QoR1pjRwxPVJayeG73zGL1Lq/4UXu3n2Yf/dq3y/CuevRjX/94hvorn6syr963ySbmPsBaTqi5U9VySsGbf96ycX4zl8LZRDqPrR4VH942ur9a9mk9KPcJaSGpmCWfOzvwKs6vuDI5qD7N/SDHTQ/XsqNfR9VWx7Kpbnfu7nSOsyURnF3D2fPU9xq66MziqIlrtdaaXZ2crz6+cefSM0X2j66sivIpNWh3CKiT26IO5+73NaNFH11/1QRj1UZVaIYalI9Xnj+ZY5bmr7hKMb3ATYRVCJKznkI4+lFVZFCJYOjLz/F1i2VV3Ccg3uImwCiEeCevj1md/QrZrYXfVLeD435EjMaz2uNLD/T0zsrrdu9rr6L7R9dVvblcwSqxBWIupVRexem70gXvVH8Mv4nj4T4/ua1X+6sPq8z/fNysrwrqC+mtqENYJzhUZVc48amF03+j6q39yn/kWeiKC8re90TN28dxVdzTPd71OWCeTHS3k6PqqWHbVPYPjzLu+M8/9uHflm9XRvdVvg6McRtdX87+CV2INwjqZ2mghR9dXF3ZX3ZM4Sv9XirPPqHwjvZ2pSsevhDsS2VOTsE5yHYljdP07CesrvmFd9cxOOZ1c+S+9nbBO4h8t+uh6B2HNftupRnKVrHzDqhL/+nOE9SeDXWJZ+TBUe6meO/ueprKmr37pfqWsVvlU+VfPrfZRyee7nCGsE8KqvuTdtbC76s4u90hWH/Vm3ik966HK/ewco36r/KvnCGucGGF9YrRrsWY+YO9wdrw2/z1xxG2WZ/W5r6r77FfZxJyqfN/5HGE9EdbRwq78OlJZ8MqZ+2Wq3FM5s7qko9pXy+Xqeq/iOeL06NXBM2Gu5pV+H2HdJVj99eY++NlfH6qL81V1K/19xYdwNZ9qXqv13zmnSpYpZwjrAmGNlvXo3cRoSb667qi/6red6rnZ543OP7s+8+8/R89595xG/SddJ6yDtKo/aavLOiutd6l7tMyVb1fPZp6d7+hXptUP2+j5afmvcki7j7AGia28r6osQVrdzzPNyOpKaVUlUuE/EtboB0z1/hnh386erVuZPfkMYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhEgrGaBGxeBZAKElZye3hFoRoCwmgVuXASSCRBWcnp6R6AZAcJqFrhxEUgmQFjJ6ekdgWYECKtZ4MZFIJkAYSWnp3cEmhH4B0Vg47wROwZXAAAAAElFTkSuQmCC" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br>
+      <div class="container text-center">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto">
+            <div class="card" style="width: 18rem;">
+                <img src="imgs/Gamepad-Logitech-F310-Cableado-Azul-940-000110-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-auto">
+            <div class="card" style="width: 18rem;">
+                <img src="imgs/Gamepad-Logitech-F310-Cableado-Azul-940-000110-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-auto">
+            <div class="card" style="width: 18rem;">
+                <img src="imgs/Gamepad-Logitech-F310-Cableado-Azul-940-000110-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/Gamepad-Logitech-F310-Cableado-Azul-940-000110-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/Gamepad-Logitech-F310-Cableado-Azul-940-000110-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/Gamepad-Logitech-F310-Cableado-Azul-940-000110-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+    <br><br>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+      
+      <div class="mb-3">
+        <label for="basic-url" class="form-label">Your vanity URL</label>
+        <div class="input-group">
+          <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+        </div>
+        <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-text">.00</span>
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+      
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
