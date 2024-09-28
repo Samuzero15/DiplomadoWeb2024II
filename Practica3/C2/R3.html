@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R3</title>
     <link rel="stylesheet" href="../estilos/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -26,16 +27,127 @@
         <form action="../galeria.html" method="post">
             
             <h3>Lista de utiles</h3>
-            <label for="lapiz">Lapiz</label><input type="checkbox" value="Lapiz" id="lapiz" name="utiles"><br>
+            <!--label for="lapiz">Lapiz</label><input type="checkbox" value="Lapiz" id="lapiz" name="utiles"><br>
             <label for="cuaderno">Cuaderno</label><input type="checkbox" value="Cuaderno" id="cuaderno" name="utiles"><br>
             <label for="borrador">Borrador</label><input type="checkbox" value="Borrador" id="borrador" name="utiles"><br>
             <label for="cartera">Cartera</label><input type="checkbox" value="Cartera" id="cartera" name="utiles"><br>
             <label for="telefono">Telefono</label><input type="checkbox" value="Telefono" id="telefono" name="utiles"><br>
             <label for="llaves">Llaves</label><input type="checkbox" value="Llaves" id="llaves" name="utiles"><br>
-            <label for="mochila">Mochila</label><input type="checkbox" value="Mochila" id="mochila" name="utiles"><br>
+            <label for="mochila">Mochila</label><input type="checkbox" value="Mochila" id="mochila" name="utiles"><br-->
 
-            <button type="submit">Guardar</button>
+            
+
+            <form action="#" method="post">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <label for="nombre" class="input-group-text">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre del producto">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <label for="descripcion" class="input-group-text">Descripcion</label>
+                            <textarea class="form-control" id="descripcion" rows="3" placeholder="Descripcion del producto, texto..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <label for="categoria" class="input-group-text">Categoria</label>
+                            <select class="form-select" id="categoria" aria-label="Large select example">
+                                <option selected>Seleccione su categoria</option>
+                                <option value="1">Estrategia</option>
+                                <option value="2">Deportes</option>
+                                <option value="3">Rompecabezas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <label for="precio">
+                                    Precio
+                                </label>
+                            </span>
+                            <input type="number" class="form-control" id="precio" min="1" step="0.05">
+                            <span class="input-group-text" id="basic-addon1">$</span>
+
+                            <span class="input-group-text" id="basic-addon1">
+                                <label for="stock">
+                                    Stock
+                                </label>
+                            </span>
+                            <input type="number" class="form-control" id="stock" min="0">
+                            <span class="input-group-text" id="basic-addon1">Unidades</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <label for="margen_ganancia_1">
+                                    Margen de Ganancia 1
+                                </label>
+                            </span>
+                            <input type="number" class="form-control" id="margen_ganancia_1" placeholder="20" max="90" min="1">
+                            <span class="input-group-text" id="basic-addon1">%</span>
+                            <span class="input-group-text" id="basic-addon1">
+                                <label for="margen_ganancia_2">
+                                    Margen de Ganancia 2
+                                </label>
+                            </span>
+                            <input type="number" class="form-control" id="margen_ganancia_2" placeholder="20" max="90" min="1">
+                            <span class="input-group-text" id="basic-addon1">%</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Caracteristicas
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="input-group mb-3">
+                                        <label for="Formato" class="input-group-text">Formato</label>
+                                        <input type="text" class="form-control" id="Formato">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label for="Plataforma" class="input-group-text">Plataforma</label>
+                                        <input type="text" class="form-control" id="Plataforma">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label for="ram_minimo" class="input-group-text">Ram Minimo</label>
+                                        <input type="text" class="form-control" id="ram_minimo">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <label for="espacio_requerido" class="input-group-text">Espacio requerido</label>
+                                        <input type="text" class="form-control" id="espacio_requerido">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupFile01">Imagen principal</label>
+                            <input type="file" class="form-control" id="inputGroupFile01">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit">Registrar Producto</button>
+                    </div>
+                </div>
+            </form>
+
+            
         </form>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
